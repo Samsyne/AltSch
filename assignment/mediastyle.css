@@ -1,0 +1,158 @@
+/* Basic Reset */
+body, h1, h2, p, audio, video, iframe {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0; /* Light background with a subtle hint of gold */
+    color: #333; /* Dark text for contrast */
+    padding: 20px;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align content horizontally */
+}
+
+/* Header Styling */
+h1 {
+    color: #d9534f; /* Red color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #d9534f; /* Red color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Container for Media Elements */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align media elements horizontally */
+    width: 100%;
+    max-width: 800px; /* Constrain the maximum width of the media container */
+    padding: 0 10px; /* Add padding to prevent elements from touching the edges */
+}
+
+/* Image Styling */
+img {
+    display: block;
+    border: 5px solid #f0c15e; /* Gold border */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; /* Constrain image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+}
+
+/* Paragraph Styling */
+p {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Audio and Video Styling */
+audio, video {
+    width: 100%;
+    max-width: 500px; /* Constrain the width of media elements */
+    border: 2px solid #d9534f; /* Red border */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+/* Specific Video Styling */
+video {
+    height: 300px; /* Maintain aspect ratio */
+}
+
+/* iFrame Styling */
+iframe {
+    width: 100%;
+    max-width: 560px; /* Constrain iframe width */
+    height: 315px; /* Set a fixed height for iframes */
+    border: 2px solid #d9534f; /* Red border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Additional Text Styling */
+p:last-of-type {
+    text-align: center;
+    color: #d9534f; /* Red color */
+    font-weight: bold;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Phones (small screens, less than 600px) */
+@media (max-width: 599px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1, h2 {
+        font-size: 1.5em; /* Slightly smaller headers */
+    }
+    
+    .media-container {
+        padding: 0;
+    }
+
+    img {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    audio, video, iframe {
+        width: 100%;
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Tablets (medium screens, 600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    body {
+        padding: 15px;
+    }
+    
+    h1, h2 {
+        font-size: 1.75em; /* Adjust header sizes for tablets */
+    }
+    
+    .media-container {
+        padding: 0;
+        height: 30;
+    }
+
+    img {
+        max-width: 100%; /* Full width on medium screens */
+    }
+
+    audio, video, iframe {
+        width: 100%;
+        max-width: 100%; /* Full width on medium screens */
+    }
+}
+
+/* Laptops and larger screens (900px and above) */
+@media (min-width: 900px) {
+    body {
+        padding: 20px;
+    }
+    
+    h1, h2 {
+        font-size: 2em; /* Larger headers for laptops and desktops */
+    }
+    
+    .media-container {
+        padding: 0;
+    }
+}

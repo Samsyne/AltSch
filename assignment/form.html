@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <section class="hero">
+        <img src="../alt pic.png" alt="Hero Image" width="550" height="400">
+        <h1>Learn highly sought after skills without hassle</h1>
+    </section>
+
+    <p class="signin">Already an Altschooler? <a href="#">Sign in!</a></p>
+
+    <h2 class="Signup">Signup</h2>
+
+    <p class="Signup">Take the next steps to apply at Altschool Africa</p>
+
+    <section class="form-section">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter First name" required>
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Enter Last name" required>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" aria-placeholder="Select Gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <label for="phone">Phone No</label>
+            <input type="tel" id="phone" name="phone" placeholder="08072444145">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="">Select your country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="United Kingdom">United Kingdom</option>
+            </select>
+
+            <label for="state">State/City of Residence</label>
+            <input type="text" id="state" name="state" placeholder="Enter your State of Residence" required>
+
+            <label for="about">How did you hear about us</label>
+            <select id="about" name="about">
+                <option value="">Select Channel</option>
+                <option value="twitter">Twitter</option>
+                <option value="youtube">YouTube</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Enter Password Again" required>
+
+            <p>By clicking continue, I agree to the <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="https://x.com/"><img src="./twitter.jpeg" alt="Twitter" width="20" height="20"></a>
+            <a href="https://www.instagram.com/"><img src="./instagram.jpg" alt="Instagram" width="20" height="20"></a>
+            <a href="https://www.linkedin.com/"><img src="./linkdin.png" alt="LinkedIn" width="20" height="20"></a>
+            <a href="https://www.facebook.com/"><img src="./facebook.png" alt="Facebook" width="20" height="20"></a>
+        </nav>
+    </footer>
+</body>
+</html>
