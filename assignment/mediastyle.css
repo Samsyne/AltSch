@@ -18,16 +18,38 @@ body {
 }
 
 /* Header Styling */
-h1 {
-    color: #d9534f; /* Red color */
+header {
     text-align: center;
     margin-bottom: 20px;
 }
 
-h2 {
+h1 {
     color: #d9534f; /* Red color */
-    text-align: center;
-    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #d9534f; /* Red color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Container for Media Elements */
@@ -48,7 +70,6 @@ img {
     width: 100%;
     max-width: 300px; /* Constrain image width */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 20px;
     margin: 0 auto 20px;
 }
 
@@ -67,21 +88,30 @@ audio, video {
     border-radius: 10px;
     background-color: #f9f9f9;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 500px; /* Constrain the width of media elements */
+    border: 2px solid #d9534f; /* Red border */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin: 20px auto; /* Center-align media elements */
+    display: block; 
 }
 
 /* Specific Video Styling */
 video {
-    height: 300px; /* Maintain aspect ratio */
+    height: 300px; /* Fixed height for videos */
 }
 
 /* iFrame Styling */
 iframe {
     width: 100%;
     max-width: 560px; /* Constrain iframe width */
-    height: 315px; /* Set a fixed height for iframes */
+    height: 315px; /* Fixed height for iframes */
     border: 2px solid #d9534f; /* Red border */
     border-radius: 10px;
     margin-bottom: 20px;
+    display: block;
+    margin: 20px auto;
 }
 
 /* Additional Text Styling */
@@ -129,7 +159,6 @@ p:last-of-type {
     
     .media-container {
         padding: 0;
-        height: 30;
     }
 
     img {
@@ -139,6 +168,7 @@ p:last-of-type {
     audio, video, iframe {
         width: 100%;
         max-width: 100%; /* Full width on medium screens */
+        align-content: center;
     }
 }
 
@@ -155,4 +185,31 @@ p:last-of-type {
     .media-container {
         padding: 0;
     }
+}
+
+/* Home Link Styling */
+.home {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home a {
+    color: #d9534f; /* Red color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+figcaption {
+    text-align: center; /* Center-align figcaption text */
+    margin-top: 5px;
+    color: #666; /* Slightly lighter color for figcaptions */
+}
+h2 {
+    text-align: center;
+}
+figure {
+    display: block;
 }

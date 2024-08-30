@@ -1,63 +1,99 @@
-/* tablestyle.css */
-
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; /* Pure white background */
+    color: black; /* Black text for strong contrast */
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Light gray border for separation */
+}
+
+header a {
+    color: black; /* Black text */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
-    margin: 20px auto;
-    background-color: #fff; /* Snow-white color for the table background */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    border: 1px solid #ccc; /* Light gray border */
 }
 
 caption {
     font-size: 1.5em;
-    margin: 10px 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: black; /* Black text */
+}
+
+thead th {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    text-align: left;
     padding: 10px;
-    background-color: #ffffff; /* Snow-white background for caption */
-    color: #333; /* Dark text color for contrast */
-    text-align: center;
+    border: 1px solid #ccc; /* Light gray border */
 }
 
-thead {
-    background-color: #f9f9f9; /* Light grey background for the header */
+tbody th {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
 }
 
-th, td {
-    padding: 12px 15px;
-    text-align: center; /* Center-align text in cells */
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #f0f0f0; /* Slightly different light grey for headers */
-    color: #333; /* Dark text color for contrast */
+tbody td {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    text-align: left;
 }
 
 tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Very light gray for alternating rows */
 }
 
-tr:hover {
-    background-color: #f1f1f1;
+footer {
+    font-size: 0.9em;
+    border-top: 1px solid #ccc; /* Light gray border for separation */
 }
 
-/* Additional styles for header rows with rowspans */
-thead th {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark text color */
+/* Visually Hidden Class for Accessibility */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
-td:first-child {
-    font-weight: bold;
-    background-color: #f9f9f9; /* Light grey background for the first column */
-}
