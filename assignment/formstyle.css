@@ -1,37 +1,58 @@
 /* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: white; /* White background */
-    color: black; /* Black text */
+    background-color: white;
+    color: black;
     margin: 0;
-    padding: 20px;
-    line-height: 1.6;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
-header, footer {
-    background-color: white;
+/* Header Styles */
+header {
     width: 100%;
+    background-color: white;
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
 
-header a, footer a {
+header nav h3 {
+    margin: 0;
+}
+
+header nav a {
     color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover, footer a:hover {
+header nav a:hover {
     text-decoration: underline;
+}
+
+/* Main Styles */
+main {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .hero {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -39,31 +60,50 @@ header a:hover, footer a:hover {
     margin-top: 20px;
 }
 
-.signin-section, .signup-section {
+/* Sign-in Section */
+.signin-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.signin-section p {
+    font-size: 1.2em;
+}
+
+.signin-section a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.signin-section a:hover {
+    text-decoration: none;
+}
+
+/* Sign-up Section */
+.signup-section {
     width: 100%;
     max-width: 600px;
-    margin: 20px 0;
-    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
 .signup-section h2 {
     font-size: 1.8em;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .signup-section p {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 1.1em;
-}
-
-.form-section {
-    width: 100%;
-    max-width: 600px;
-    margin: 20px auto;
+    text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 label {
@@ -72,7 +112,12 @@ label {
     margin-bottom: 5px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="password"], input[type="date"], select {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -81,7 +126,12 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     font-size: 1em;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="password"]:focus, input[type="date"]:focus, select:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
     outline: none;
     border-color: #666;
 }
@@ -106,26 +156,61 @@ button[type="submit"]:hover {
     background-color: blue;
 }
 
+/* Footer Styles */
+footer {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
 footer ul {
     list-style: none;
     padding: 0;
-}
-
-footer ul.social-links {
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
-footer ul.social-links li {
-    display: inline;
-}
-
-footer ul.social-links a {
+footer ul li {
     display: inline-block;
-    padding: 5px;
 }
 
-footer ul.social-links a:hover {
+footer ul li a {
+    display: inline-block;
+}
+
+footer ul li a:hover {
     opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 599px) {
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .signup-section {
+        padding: 15px;
+    }
+
+    .signup-section h2 {
+        font-size: 1.5em;
+    }
+
+    button[type="submit"] {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .hero h1 {
+        font-size: 1.75em;
+    }
+
+    .signup-section h2 {
+        font-size: 1.75em;
+    }
 }
